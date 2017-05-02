@@ -1,11 +1,13 @@
 package me.pexcn.kotlin.samples
 
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import me.pexcn.android.base.ui.BaseActivity
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity() {
+    override fun getLayoutId(): Int {
+        return R.layout.activity_main
+    }
+
+    override fun init() {
+
     }
 }

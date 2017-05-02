@@ -6,6 +6,8 @@
     android:orientation="vertical"
     tools:context="me.pexcn.kotlin.samples.MainActivity">
 
+    <include layout="@layout/toolbar_in_appbar" />
+
 
 
 </LinearLayout>
