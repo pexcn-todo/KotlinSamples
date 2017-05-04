@@ -14,6 +14,7 @@ class TestActivity : BaseActivity() {
     override fun init() {
         super.init()
 
+
     }
 
     override fun isSubActivity(): Boolean {
