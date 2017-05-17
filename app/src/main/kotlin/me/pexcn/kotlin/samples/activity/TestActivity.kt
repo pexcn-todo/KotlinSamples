@@ -8,13 +8,11 @@ import me.pexcn.kotlin.samples.base.BaseActivity
  */
 class TestActivity : BaseActivity() {
     override fun getLayoutId(): Int {
-        return R.layout.activity_main
+        return R.layout.activity_test
     }
 
     override fun init() {
         super.init()
-
-
     }
 
     override fun isSubActivity(): Boolean {

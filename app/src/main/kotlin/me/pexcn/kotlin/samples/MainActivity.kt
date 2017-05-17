@@ -5,7 +5,6 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ListView
-import me.pexcn.kotlin.samples.activity.Test2Activity
 import me.pexcn.kotlin.samples.activity.TestActivity
 import me.pexcn.kotlin.samples.base.BaseActivity
 
@@ -29,8 +28,6 @@ class MainActivity : BaseActivity(), AdapterView.OnItemClickListener {
         when (position) {
             0 ->
                 setTargetActivity(position, TestActivity::class.java)
-            1 ->
-                setTargetActivity(position, Test2Activity::class.java)
         }
     }
 
