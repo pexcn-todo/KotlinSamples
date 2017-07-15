@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="me.pexcn.kotlin.samples.MainActivity">
+    tools:context="me.pexcn.kotlin.samples.activity.MainActivity">
 
     <include layout="@layout/toolbar_in_appbar" />
 
     <ListView
-        android:id="@+id/list_view"
+        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
