@@ -16,6 +16,7 @@ import java.io.FileOutputStream
 import java.text.SimpleDateFormat
 import java.util.*
 
+
 /**
  * Created by pexcn on 2017-07-14.
  */
@@ -99,5 +100,19 @@ object ImageUtils {
         }
 
         return Uri.fromFile(File(dstPath))
+    }
+
+    fun getImageThumbnail(path: String, width: Int, height: Int): Bitmap {
+        val options = BitmapFactory.Options()
+        options.inJustDecodeBounds = true
+        BitmapFactory.decodeFile(path, options)
+
+        val imageW = options.outWidth
+        val imageH = options.outHeight
+        val sampleSize = (imageW / width + imageH / height) / 2
+        options.inSampleSize = sampleSize
+
+        options.inJustDecodeBounds = false
+        return BitmapFactory.decodeFile(path, options)
     }
 }
